@@ -524,7 +524,12 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-social-title {
+.submit {
+  margin-left: 93px;
+  width: 100%;
+}
+.footer-social-title,
+.footer-submit {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -533,6 +538,61 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+.send-form {
+  display: flex;
+}
+.send-icon {
+  margin-left: 10px;
+  fill: var(--primary-white-color);
+}
+.button-submit {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 29px;
+  border: 0;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  cursor: pointer;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #188ce8;
+}
+.input-submit {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  color: var(--primary-white-color);
+  transition: border-color 250ms var(--cubic);
+}
+.input-submit:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.input-submit::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-submit {
+  margin-bottom: 20px;
 }
 .footer-social-list {
   display: flex;
@@ -758,7 +818,7 @@ footer-address-destination:focus {
   /* 
   visibility: visible; */
   /* transition-delay: 0s; */
-
+  padding: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--primary-white-color);
@@ -766,7 +826,116 @@ footer-address-destination:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-field {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.modal-form-field:nth-of-type(4) {
+  margin-bottom: 20px;
+}
+/* .modal-form-field: :last-child {
+  margin-bottom: 20px;
+} */
 
+.modal-input-wrapper {
+  display: block;
+  margin-top: 4px;
+  position: relative;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms var(--cubic);
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 42px;
+  transition: border-color 250ms var(--cubic);
+}
+.modal-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+.message-field {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  margin-top: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: border-color 250ms var(--cubic);
+}
+
+.message-field:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+.modal-license {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.license-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+.modal-bttn {
+  align-self: center;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  border: none;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  cursor: pointer;
+
+  transition: background-color 250ms var(--cubic);
+}
+.modal-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  columns: var(--primary-text-color);
+  margin-bottom: 12px;
+}
 .close-button {
   position: absolute;
   top: 8px;
