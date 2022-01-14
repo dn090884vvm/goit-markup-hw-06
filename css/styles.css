@@ -939,7 +939,7 @@ footer-address-destination:focus {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  columns: var(--primary-text-color);
+  color: var(--primary-text-color);
   margin-bottom: 12px;
 }
 .close-button {
