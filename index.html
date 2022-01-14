@@ -448,9 +448,8 @@
             </span>
           </label>
 
-          <label class="modal-form-field"
-            >Телефон
-
+          <label class="modal-form-field">
+            Телефон
             <span class="modal-input-wrapper"
               ><input type="tel" class="modal-input" />
               <svg width="18" height="18" class="modal-icon">
@@ -458,9 +457,9 @@
               </svg>
             </span>
           </label>
-          <label class="modal-form-field"
-            >Почта
 
+          <label class="modal-form-field">
+            Почта
             <span class="modal-input-wrapper"
               ><input type="email" class="modal-input" />
               <svg width="18" height="18" class="modal-icon">
@@ -468,16 +467,20 @@
               </svg>
             </span>
           </label>
-          <label class="modal-form-field"
-            >Комментарий<textarea class="message-field"></textarea>
+          <label class="modal-form-field">
+            Комментарий<textarea class="message-field"></textarea>
           </label>
-          <label for="" class="modal-license"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="#" class="link license-link">Условия договора</a></label
-          >
+
+          <label class="modal-license">
+            <input type="checkbox" class="checkbox" name="license-check" value="license-agree" />
+            <span class="icon-check-license"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="link license-link"> Условия договора</a>
+          </label>
 
           <button type="submit" class="modal-bttn">Отправить</button>
         </form>
+
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="18" height="18">
             <use href="./svg/symbol-defs.svg#icon-close-button"></use>
