@@ -526,7 +526,7 @@ ul {
 }
 .submit {
   margin-left: 93px;
-  width: 100%;
+  /* width: 100%; */
 }
 .footer-social-title,
 .footer-submit {
@@ -633,6 +633,7 @@ ul {
 }
 .footer-address {
   font-style: normal;
+  width: 231px;
 }
 .footer-address-list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -958,11 +959,13 @@ footer-address-destination:focus {
   cursor: pointer;
   /* background-color: transparent; */
   background-color: var(--primary-white-color);
-}
-close-icon {
-  fill: #000000;
+  transition: fill 250ms var(--cubic);
 }
 
+.close-button:hover,
+.close-button:focus {
+  fill: var(--accent-color);
+}
 .checkbox {
   /* -webkit-appearance: none;
   -moz-appearance: none;
