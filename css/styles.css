@@ -518,6 +518,7 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer {
   background-color: var(--dark-bg-color);
@@ -633,7 +634,7 @@ ul {
 }
 .footer-address {
   font-style: normal;
-  width: 231px;
+  /* width: 231px; */
 }
 .footer-address-list-item:not(:last-child) {
   margin-bottom: 9px;
